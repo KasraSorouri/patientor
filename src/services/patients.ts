@@ -20,8 +20,17 @@ const create = async (object: PatientFormValues) => {
   return data;
 };
 
+const getPatientById = async (id : string) => {
+  console.log('id ->',id);
+  
+  const { data } = await axios.get<Patient>(
+    `${apiBaseUrl}/patients/${id}`
+  );
+  return data;
+}
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  getAll, create
+  getAll, create, getPatientById
 };
 
