@@ -6,7 +6,6 @@ interface Props {
 };
 const Entries = ({entries}: Props) => {
 
-  console.log('entries -> ',entries);
   if(!entries) {
     return null;
   }

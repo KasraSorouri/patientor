@@ -21,9 +21,6 @@ const PatientPage = () => {
     void fetchPatient();
   },[id])
 
-  console.log('patient -> ', patient);
-  
-
   return(
     <div>
       <Typography variant='h3' style={{ marginBottom: "0.5em" }}>
